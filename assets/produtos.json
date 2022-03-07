@@ -1,0 +1,486 @@
+[
+    {
+        "nome": "Água",
+        "categoria": "Bebidas"
+    },
+    {
+        "nome": "Cerveja",
+        "categoria": "Bebidas"
+    },
+    {
+        "nome": "Refrigerante",
+        "categoria": "Bebidas"
+    },
+    {
+        "nome": "Suco",
+        "categoria": "Bebidas"
+    },
+    {
+        "nome": "Vinho",
+        "categoria": "Bebidas"
+    },
+    {
+        "nome": "Refresco em pó",
+        "categoria": "Bebidas"
+    },
+    {
+        "nome": "Sorvete",
+        "categoria": "Doces e Sobremesas"
+    },
+    {
+        "nome": "Geléia",
+        "categoria": "Doces e Sobremesas"
+    },
+    {
+        "nome": "Gelatina",
+        "categoria": "Doces e Sobremesas"
+    },
+    {
+        "nome": "Achocolatado",
+        "categoria": "Matinais"
+    },
+    {
+        "nome": "Café",
+        "categoria": "Matinais"
+    },
+    {
+        "nome": "Cereal",
+        "categoria": "Matinais"
+    },
+    {
+        "nome": "Chá",
+        "categoria": "Matinais"
+    },
+    {
+        "nome": "Creme de Leite",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Fermento",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Leite Condensado",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Leite",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Amido de Milho",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Açucar",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Arroz",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Feijão",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Sal",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Milho de Pipoca",
+        "categoria": "Mercearia"
+    },
+    {
+        "nome": "Água e Sal",
+        "categoria": "Biscoitos"
+    },
+    {
+        "nome": "Recheado",
+        "categoria": "Biscoitos"
+    },
+    {
+        "nome": "Salgadinhos",
+        "categoria": "Biscoitos"
+    },
+    {
+        "nome": "Waffer",
+        "categoria": "Biscoitos"
+    },
+    {
+        "nome": "Chocolate",
+        "categoria": "Chocolates e Balas"
+    },
+    {
+        "nome": "Chiclete",
+        "categoria": "Chocolates e Balas"
+    },
+    {
+        "nome": "Balas",
+        "categoria": "Chocolates e Balas"
+    },
+    {
+        "nome": "Aveia",
+        "categoria": "Produtos Naturais e Dietéticos"
+    },
+    {
+        "nome": "Granola",
+        "categoria": "Produtos Naturais e Dietéticos"
+    },
+    {
+        "nome": "Barra de Cereal",
+        "categoria": "Produtos Naturais e Dietéticos"
+    },
+    {
+        "nome": "Adoçante",
+        "categoria": "Produtos Naturais e Dietéticos"
+    },
+    {
+        "nome": "Farinha de Mandioca",
+        "categoria": "Farinhas"
+    },
+    {
+        "nome": "Farinha de Milho",
+        "categoria": "Farinhas"
+    },
+    {
+        "nome": "Farinha de Trigo",
+        "categoria": "Farinhas"
+    },
+    {
+        "nome": "Macarrão",
+        "categoria": "Massas"
+    },
+    {
+        "nome": "Lasanha",
+        "categoria": "Massas"
+    },
+    {
+        "nome": "Macarrão Instantâneo",
+        "categoria": "Massas"
+    },
+    {
+        "nome": "Catchup",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Maionese",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Mostarda",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Extrato de Tomate",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Molho de Tomate",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Molho Inglês",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Molho de Soja",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Vinagre",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Especiarias",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Tempero Pronto",
+        "categoria": "Molhos e Temperos"
+    },
+    {
+        "nome": "Atum",
+        "categoria": "Conservas"
+    },
+    {
+        "nome": "Sardinha",
+        "categoria": "Conservas"
+    },
+    {
+        "nome": "Azeitona",
+        "categoria": "Conservas"
+    },
+    {
+        "nome": "Ervilha",
+        "categoria": "Conservas"
+    },
+    {
+        "nome": "Milho",
+        "categoria": "Conservas"
+    },
+    {
+        "nome": "Palmito",
+        "categoria": "Conservas"
+    },
+    {
+        "nome": "Azeite",
+        "categoria": "Óleos"
+    },
+    {
+        "nome": "Óleo",
+        "categoria": "Óleos"
+    },
+    {
+        "nome": "Filtro de Café",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Guardanapo",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Papel Alumínio",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Papel Toalha",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Filme PVC",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Palito de Dente",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Lâmpada",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Pilha",
+        "categoria": "Papéis e Utilidades"
+    },
+    {
+        "nome": "Água Sanitária",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Álcool",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Amaciante",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Desinfetante",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Detergente",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Esponja",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Inseticida",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Sabão em Pó",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Limpador Multiuso",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Limpa Vidros",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Lustra Móveis",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Palha de aço",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Sabão em Barra",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Saco de Lixo",
+        "categoria": "Limpeza"
+    },
+    {
+        "nome": "Absorvente",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Algodão",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Antiséptico Bucal",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Condicionador",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Pasta de Dente",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Desodorante",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Fio Dental",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Lâmina de Barbear",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Papel Higiênico",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Sabonete",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Shampoo",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Escova de Dentes",
+        "categoria": "Higiene"
+    },
+    {
+        "nome": "Ração",
+        "categoria": "Produtos para Animais"
+    },
+    {
+        "nome": "Iogurte",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Leite Fermentado",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Manteiga",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Margarina",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Presunto",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Queijo",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Requeijão",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Ricota",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Salame",
+        "categoria": "Frios e Laticíneos"
+    },
+    {
+        "nome": "Bovina",
+        "categoria": "Carnes"
+    },
+    {
+        "nome": "Suína",
+        "categoria": "Carnes"
+    },
+    {
+        "nome": "Frango",
+        "categoria": "Carnes"
+    },
+    {
+        "nome": "Peixe",
+        "categoria": "Carnes"
+    },
+    {
+        "nome": "Bolo",
+        "categoria": "Padaria"
+    },
+    {
+        "nome": "Fermento",
+        "categoria": "Padaria"
+    },
+    {
+        "nome": "Pão de Forma",
+        "categoria": "Padaria"
+    },
+    {
+        "nome": "Pão Frânces",
+        "categoria": "Padaria"
+    },
+    {
+        "nome": "Alho",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Cebola",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Batata",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Tomate",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Cenoura",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Banana",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Mamão",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Laranja",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Morango",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Alface",
+        "categoria": "Hortifruti"
+    },
+    {
+        "nome": "Ovos",
+        "categoria": "Hortifruti"
+    }
+]

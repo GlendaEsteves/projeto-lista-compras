@@ -11,6 +11,11 @@ class Produto {
 
   @override
   String toString() {
-    return 'Sintoma{nome: $nome, categoria: $categoria, quantidade: $quantidade}';
+    return 'Produto{nome: $nome, categoria: $categoria, quantidade: $quantidade}';
+  }
+
+  factory Produto.fromJson(dynamic json) {
+    return Produto(
+        nome: json['nome'] as String, categoria: json['categoria'] as String);
   }
 }
