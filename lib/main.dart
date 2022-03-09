@@ -34,8 +34,8 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       body: Column(
-        children: const [
-          Center(
+        children: [
+          const Center(
             child: Text('Lista de Compras!'),
           ),
         ],
@@ -68,6 +68,12 @@ class MyHomePage extends StatelessWidget {
                     builder: (context) => TelaProdutos(listaProdutos),
                   ),
                 );
+              },
+            ),
+            ListTile(
+              title: const Text('Lista Personalizada'),
+              onTap: () {
+                Navigator.pop(context);
               },
             ),
           ],
