@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:lista_de_compras/telaProdutos.dart';
 import 'produtos.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -33,8 +34,8 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       body: Column(
-        children: [
-          const Center(
+        children: const [
+          Center(
             child: Text('Lista de Compras!'),
           ),
         ],
@@ -61,14 +62,12 @@ class MyHomePage extends StatelessWidget {
                 var listaDados = jsonDecode(dadosJson) as List;
                 List<Produto> listaProdutos =
                     listaDados.map((e) => Produto.fromJson(e)).toList();
-                print(listaProdutos);
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              title: const Text('Lista Personalizada'),
-              onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TelaProdutos(listaProdutos),
+                  ),
+                );
               },
             ),
           ],
