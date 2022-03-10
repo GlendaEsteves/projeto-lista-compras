@@ -1,9 +1,10 @@
-class Produto {
+class ProdutoModel {
   String nome;
   String categoria;
   int quantidade;
 
-  Produto({required this.nome, required this.categoria, this.quantidade = 0});
+  ProdutoModel(
+      {required this.nome, this.categoria = 'Outros', this.quantidade = 0});
 
   Map<String, dynamic> toMap() {
     return {'nome': nome, 'categoria': categoria, 'quantidade': quantidade};
@@ -14,8 +15,8 @@ class Produto {
     return 'Produto{nome: $nome, categoria: $categoria, quantidade: $quantidade}';
   }
 
-  factory Produto.fromJson(dynamic json) {
-    return Produto(
+  factory ProdutoModel.fromJson(dynamic json) {
+    return ProdutoModel(
         nome: json['nome'] as String, categoria: json['categoria'] as String);
   }
 }
