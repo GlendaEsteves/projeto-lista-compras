@@ -4,7 +4,7 @@ import 'package:lista_de_compras/produtos.dart';
 class ListaModel extends ChangeNotifier {
   late ProdutoModel _produto;
 
-  final List<ProdutoModel> _itemLista = [];
+  final List<ProdutoModel> itemLista = [];
 
   ProdutoModel get produto => _produto;
 
@@ -14,16 +14,12 @@ class ListaModel extends ChangeNotifier {
   }
 
   void add(ProdutoModel produto) {
-    ProdutoModel produto = this.produto;
-    _itemLista.add(produto);
+    itemLista.add(produto);
     notifyListeners();
   }
 
   void remove(ProdutoModel produto) {
-    ProdutoModel produto = this.produto;
-    _itemLista.remove(produto);
-    // Don't forget to tell dependent widgets to rebuild _every time_
-    // you change the model.
+    itemLista.remove(produto);
     notifyListeners();
   }
 }

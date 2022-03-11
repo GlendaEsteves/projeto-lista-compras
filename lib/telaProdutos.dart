@@ -16,7 +16,14 @@ class _TelaProdutosState extends State<TelaProdutos> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: const Icon(Icons.home),
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/');
+            },
+            child: const Icon(
+              Icons.home,
+            ),
+          ),
           centerTitle: true,
           title: const Text(
             'Escolha seus itens!',
@@ -45,7 +52,7 @@ class _TelaProdutosState extends State<TelaProdutos> {
                         )),
                       ])));
             } else {
-              return Center(child: const CircularProgressIndicator());
+              return const Center(child: CircularProgressIndicator());
             }
           },
         ));
@@ -63,6 +70,7 @@ class CriarListTile extends StatefulWidget {
 
 class _CriarListTileState extends State<CriarListTile> {
   int _contador = 0;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -77,12 +85,6 @@ class _CriarListTileState extends State<CriarListTile> {
                         icon: const Icon(Icons.remove),
                         onPressed: () => setState(() {
                           _contador--;
-                          var produto = ProdutoModel(
-                              nome: widget.title, quantidade: _contador);
-                          var lista = context.read<ListaModel>();
-                          if (_contador == 0) {
-                            lista.remove(produto);
-                          }
                         }),
                       )
                     : Container(),
@@ -91,6 +93,10 @@ class _CriarListTileState extends State<CriarListTile> {
                     icon: const Icon(Icons.add),
                     onPressed: () => setState(() {
                           _contador++;
+                        })),
+                IconButton(
+                    icon: const Icon(Icons.check),
+                    onPressed: () => setState(() {
                           var produto = ProdutoModel(
                               nome: widget.title, quantidade: _contador);
                           var lista = context.read<ListaModel>();

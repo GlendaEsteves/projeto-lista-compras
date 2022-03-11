@@ -1,13 +1,9 @@
-import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:lista_de_compras/lista.dart';
-import 'package:lista_de_compras/telaLista.dart';
 import 'package:lista_de_compras/telaProdutos.dart';
 import 'package:provider/provider.dart';
 import 'produtos.dart';
-import 'package:path_provider/path_provider.dart';
+import 'lista.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +33,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
         providers: [
-          Provider(create: (context) => ProdutoModel(categoria: '', nome: '')),
+          Provider(create: (context) => ProdutoModel(nome: '')),
           ChangeNotifierProxyProvider<ProdutoModel, ListaModel>(
             create: (context) => ListaModel(),
             update: (context, produto, lista) {
@@ -68,12 +64,32 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Lista de Compras')),
+      appBar: AppBar(
+        title: Text('Lista de Compras'),
+        actions: <Widget>[
+          Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {
+                  var lista = context.read<ListaModel>();
+                  for (var i = 0; i < lista.itemLista.length; i++) {
+                    lista.remove(lista.itemLista[i]);
+                  }
+                },
+                child: const Icon(
+                  Icons.remove_circle_outline,
+                  size: 26.0,
+                ),
+              )),
+        ],
+      ),
       body: Column(
-        children: const [
-          Center(
-            child: Text('Lista de Compras!'),
-          ),
+        children: [
+          Expanded(
+              child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: _ListaCompras(),
+          ))
         ],
       ),
       drawer: Drawer(
@@ -97,6 +113,36 @@ class _HomeState extends State<Home> {
               },
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ListaCompras extends StatefulWidget {
+  @override
+  State<_ListaCompras> createState() => _ListaComprasState();
+}
+
+class _ListaComprasState extends State<_ListaCompras> {
+  @override
+  Widget build(BuildContext context) {
+    var lista = context.watch<ListaModel>();
+
+    return ListView.builder(
+      itemCount: lista.itemLista.length,
+      itemBuilder: (context, index) => ListTile(
+        title: Text(lista.itemLista[index].nome),
+        trailing: FittedBox(
+          child: Row(
+            children: [
+              Text(lista.itemLista[index].quantidade.toString()),
+              IconButton(
+                icon: const Icon(Icons.remove_circle_outline),
+                onPressed: () => lista.remove(lista.itemLista[index]),
+              ),
+            ],
+          ),
         ),
       ),
     );
